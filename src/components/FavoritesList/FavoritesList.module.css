@@ -1,0 +1,143 @@
+.favoritesList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.cityCard {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+
+.cityCard:hover {
+  transform: scale(1.05);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cityName {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.temperature {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.localTime,
+.weatherDescription {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.tempDetails {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.removeButton {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.removeButton:hover {
+  background: rgba(255, 0, 0, 0.7);
+}
+
+@media (min-width: 768px) {
+  .favoritesList {
+    max-width: 768px;
+    gap: 30px;
+  }
+
+  .cityCard {
+    padding: 25px;
+  }
+
+  .cityName {
+    font-size: 16px;
+  }
+
+  .temperature {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .favoritesList {
+    max-width: 1200px;
+    gap: 40px;
+  }
+
+  .cityCard {
+    padding: 30px;
+  }
+
+  .cityName {
+    font-size: 20px;
+  }
+
+  .temperature {
+    font-size: 18px;
+  }
+
+  .localTime,
+  .weatherDescription {
+    font-size: 14px;
+  }
+
+  .tempDetails {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .favoritesList {
+    max-width: 1440px;
+    padding: 40px;
+  }
+
+  .cityCard {
+    padding: 35px;
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.6);
+  }
+
+  .cityName {
+    font-size: 40px;
+  }
+
+  .temperature {
+    font-size: 28px;
+  }
+
+  .localTime,
+  .weatherDescription {
+    font-size: 28px;
+  }
+
+  .tempDetails {
+    font-size: 28px;
+  }
+}

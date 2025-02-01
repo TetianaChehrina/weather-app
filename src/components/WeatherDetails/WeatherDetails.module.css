@@ -1,0 +1,118 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  gap: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.city {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.date {
+  font-size: 14px;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+.mainInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.temperature {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.time {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.details p {
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 600px;
+    padding: 25px;
+    gap: 20px;
+  }
+
+  .city {
+    font-size: 24px;
+  }
+
+  .date {
+    font-size: 16px;
+  }
+
+  .temperature {
+    font-size: 48px;
+  }
+
+  .time {
+    font-size: 18px;
+  }
+
+  .details {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 800px;
+    padding: 30px;
+    gap: 25px;
+  }
+
+  .city {
+    font-size: 40px;
+  }
+
+  .date {
+    font-size: 18px;
+  }
+
+  .temperature {
+    font-size: 64px;
+  }
+
+  .time {
+    font-size: 20px;
+  }
+
+  .details {
+    font-size: 16px;
+  }
+}

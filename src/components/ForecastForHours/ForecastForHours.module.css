@@ -1,0 +1,79 @@
+.hourlyForecast {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.hourlyList {
+  display: flex;
+  gap: 10px;
+}
+
+.hour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255, 255, 205, 0.1);
+  border-radius: 10px;
+  min-width: 80px;
+}
+.hour img {
+  width: 60px;
+  height: 60px;
+  filter: drop-shadow(0 0 8px rgba(255, 255, 255, 1));
+}
+
+@media (min-width: 768px) {
+  .hour {
+    min-width: 100px;
+    padding: 15px;
+  }
+
+  .hour img {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 1));
+  }
+
+  .hour p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hour {
+    min-width: 120px;
+    padding: 20px;
+  }
+
+  .hour img {
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 1));
+  }
+
+  .hour p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .hour {
+    min-width: 150px;
+    padding: 30px;
+  }
+
+  .hour img {
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 1));
+  }
+
+  .hour p {
+    font-size: 20px;
+  }
+}
