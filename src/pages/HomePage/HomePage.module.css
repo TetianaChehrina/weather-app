@@ -1,0 +1,155 @@
+.container {
+  max-width: 90%;
+  min-height: 85vh;
+  margin: 20px auto;
+  padding: 20px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.locationInfo {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.locationInfo:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.locationInfo .icon {
+  font-size: 18px;
+  color: #333;
+}
+
+.addToFavorites {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.addToFavorites:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.main {
+  padding: 20px 0;
+}
+
+.weatherDetailsContainer,
+.forecastContainer {
+  margin: 15px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 80%;
+    padding: 30px;
+  }
+
+  .header {
+    height: 100px;
+    margin-bottom: 30px;
+  }
+
+  .icon {
+    font-size: 28px;
+  }
+
+  .addToFavorites {
+    font-size: 18px;
+    padding: 12px 25px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .nav {
+    max-width: 960px;
+  }
+
+  .icon {
+    font-size: 30px;
+  }
+
+  .addToFavorites {
+    font-size: 20px;
+    padding: 15px 30px;
+  }
+
+  .weatherDetailsContainer,
+  .forecastContainer {
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    padding: 40px;
+  }
+
+  .nav {
+    max-width: 1280px;
+  }
+
+  .icon {
+    font-size: 32px;
+  }
+
+  .addToFavorites {
+    font-size: 22px;
+    padding: 18px 35px;
+  }
+
+  .weatherDetailsContainer,
+  .forecastContainer {
+    padding: 30px;
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+  }
+}

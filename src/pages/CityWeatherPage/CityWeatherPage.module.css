@@ -1,0 +1,96 @@
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding: 20px;
+  color: white;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.backButton {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.3s ease;
+}
+
+.backButton:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.icon {
+  font-size: 18px;
+}
+
+.main {
+  padding: 20px 0;
+}
+
+.weatherDetailsContainer {
+  margin: 20px 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.forecastContainer h2 {
+  margin-top: 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.forecastContainer {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 30px;
+  }
+
+  .header {
+    justify-content: flex-start;
+  }
+
+  .backButton {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 960px;
+    padding: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    padding: 50px;
+  }
+}
