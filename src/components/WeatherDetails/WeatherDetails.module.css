@@ -7,6 +7,7 @@
   padding: 20px;
   border-radius: 15px;
   max-width: 90%;
+
   margin: 0 auto;
   margin-bottom: 20px;
   gap: 15px;
@@ -21,13 +22,13 @@
 }
 
 .city {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
   margin: 0;
 }
 
 .date {
-  font-size: 14px;
+  font-size: 12px;
   color: #b0b0b0;
   margin: 0;
 }
@@ -40,12 +41,12 @@
 }
 
 .temperature {
-  font-size: 36px;
+  font-size: 16px;
   font-weight: bold;
 }
 
 .time {
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
 }
 
@@ -54,7 +55,7 @@
   flex-direction: column;
   gap: 5px;
   font-size: 12px;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 
 .details p {
@@ -64,8 +65,64 @@
 @media (min-width: 768px) {
   .container {
     max-width: 600px;
-    padding: 25px;
-    gap: 20px;
+    padding: 15px;
+    gap: 5px;
+  }
+
+  .city {
+    font-size: 18px;
+  }
+
+  .date {
+    font-size: 14px;
+  }
+
+  .temperature {
+    font-size: 18px;
+  }
+
+  .time {
+    font-size: 14px;
+  }
+
+  .details {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 700px;
+    padding: 15px;
+    gap: 25px;
+  }
+
+  .city {
+    font-size: 20px;
+  }
+
+  .date {
+    font-size: 18px;
+  }
+
+  .temperature {
+    font-size: 20px;
+  }
+
+  .time {
+    font-size: 20px;
+  }
+
+  .details {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 800px;
+    padding: 15px;
+    gap: 10px;
   }
 
   .city {
@@ -77,35 +134,7 @@
   }
 
   .temperature {
-    font-size: 48px;
-  }
-
-  .time {
-    font-size: 18px;
-  }
-
-  .details {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 800px;
-    padding: 30px;
-    gap: 25px;
-  }
-
-  .city {
-    font-size: 40px;
-  }
-
-  .date {
-    font-size: 18px;
-  }
-
-  .temperature {
-    font-size: 64px;
+    font-size: 20px;
   }
 
   .time {
@@ -114,5 +143,33 @@
 
   .details {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 800px;
+    padding: 15px;
+    gap: 25px;
+  }
+
+  .city {
+    font-size: 38px;
+  }
+
+  .date {
+    font-size: 20px;
+  }
+
+  .temperature {
+    font-size: 28px;
+  }
+
+  .time {
+    font-size: 28px;
+  }
+
+  .details {
+    font-size: 22px;
   }
 }

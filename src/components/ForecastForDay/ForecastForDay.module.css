@@ -2,7 +2,7 @@
   padding: 20px;
   background-color: rgba(395, 255, 205, 0.1);
   border-radius: 10px;
-  margin-bottom: 20px;
+
   overflow-x: auto;
 }
 
@@ -13,8 +13,8 @@
 }
 
 .title {
-  padding-bottom: 15px;
-  font-size: 18px;
+  padding-bottom: 10px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -23,42 +23,52 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  padding: 8px;
   background: rgba(255, 255, 205, 0.1);
   border-radius: 10px;
   min-width: 100px;
 }
 
 .day img {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.8));
 }
 
 .day p {
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 
 @media (min-width: 768px) {
+  .dailyForecast {
+    padding: 10px;
+    overflow-x: auto;
+  }
+  .dailyList {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
   .day {
-    min-width: 120px;
-    padding: 15px;
+    min-width: 100px;
+    max-height: 90px;
+    padding: 5px;
   }
 
   .day img {
-    width: 70px;
-    height: 70px;
+    width: 40px;
+    height: 40px;
     filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.8));
   }
 
   .day p {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .title {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 
@@ -85,25 +95,62 @@
 
 @media (min-width: 1440px) {
   .dailyForecast {
-    padding: 40px;
+    padding: 10px;
   }
-
+  .dailyList {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
   .day {
-    min-width: 200px;
-    padding: 30px;
+    min-width: 120px;
+    min-height: 90px;
+    padding: 10px;
   }
 
   .day img {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 1));
   }
 
   .day p {
-    font-size: 20px;
+    margin: 0px 0px;
+    font-size: 14px;
   }
 
   .title {
-    font-size: 28px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .dailyForecast {
+    padding: 40px;
+  }
+  .dailyList {
+    display: flex;
+    gap: 10px;
+    justify-content: space-evenly;
+  }
+  .day {
+    min-width: 140px;
+    min-height: 140px;
+    padding: 10px;
+  }
+
+  .day img {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 0 8px rgba(255, 255, 255, 1));
+  }
+
+  .day p {
+    margin: 0px 0px;
+    font-size: 18px;
+  }
+
+  .title {
+    font-size: 20px;
   }
 }

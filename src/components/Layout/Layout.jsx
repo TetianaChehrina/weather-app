@@ -1,8 +1,11 @@
+import Footer from "../Footer/Footer";
 import css from "./Layout.module.css";
 export const Layout = ({ children }) => (
   <>
-    <main>{children}</main>
-    <footer className={css.footer}>© 2025 Weather App</footer>
+    <div className={css.layout}>
+      <main className={css.main}>{children}</main>
+      <Footer />
+    </div>
   </>
 );
 export default Layout;

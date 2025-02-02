@@ -115,29 +115,32 @@
 
 @media (min-width: 1440px) {
   .favoritesList {
-    max-width: 1440px;
+    max-width: 1000px;
     padding: 40px;
   }
 
   .cityCard {
-    padding: 35px;
+    padding: 25px;
     box-shadow: 0 6px 15px rgba(255, 255, 255, 0.6);
   }
 
   .cityName {
-    font-size: 40px;
+    font-size: 30px;
   }
 
   .temperature {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .localTime,
   .weatherDescription {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .tempDetails {
-    font-size: 28px;
+    font-size: 22px;
   }
+}
+
+@media (min-width: 1440px) {
 }
