@@ -76,11 +76,12 @@
   .day {
     min-width: 150px;
     padding: 20px;
+    min-height: 135px;
   }
 
   .day img {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 1));
   }
 
@@ -109,8 +110,8 @@
   }
 
   .day img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     filter: drop-shadow(0 0 8px rgba(255, 255, 255, 1));
   }
 
@@ -126,7 +127,7 @@
 
 @media (min-width: 1600px) {
   .dailyForecast {
-    padding: 40px;
+    padding: 15px;
   }
   .dailyList {
     display: flex;
@@ -135,7 +136,7 @@
   }
   .day {
     min-width: 140px;
-    min-height: 140px;
+    min-height: 110px;
     padding: 10px;
   }
 
