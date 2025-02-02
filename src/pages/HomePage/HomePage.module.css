@@ -109,7 +109,7 @@
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    max-height: 70vh;
+    max-height: 85vh;
   }
 
   .nav {
@@ -155,5 +155,13 @@
   .forecastContainer {
     padding: 30px;
     box-shadow: 0 6px 20px rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media (min-width: 1600px) {
+  .container {
+    max-width: 1440px;
+    padding: 20px;
+    max-height: 85vh;
   }
 }
