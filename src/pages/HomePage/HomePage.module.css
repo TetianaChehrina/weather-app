@@ -1,21 +1,19 @@
 .container {
   max-width: 90%;
-  min-height: 85vh;
-  margin: 20px auto;
-  padding: 20px;
+  max-height: 87vh;
+  margin: 0 auto;
+  padding: 15px;
   color: white;
   background: rgba(0, 0, 0, 0.7);
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
 }
 
 .header {
-  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  padding: 15px;
 }
 
 .nav {
@@ -27,16 +25,18 @@
 }
 
 .icon {
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   color: white;
 }
 
 .locationInfo {
+  width: 24px;
+  height: 24px;
   background-color: rgba(255, 255, 255, 0.8);
   border: none;
   border-radius: 50%;
-  padding: 12px;
+  padding: 6px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -60,8 +60,8 @@
   color: white;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 10px;
+  font-size: 12px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
@@ -76,7 +76,6 @@
 
 .weatherDetailsContainer,
 .forecastContainer {
-  margin: 15px 0;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   padding: 20px;
@@ -85,13 +84,13 @@
 
 @media (min-width: 768px) {
   .container {
-    max-width: 80%;
+    max-width: 95%;
+    max-height: 84vh;
     padding: 30px;
   }
 
   .header {
     height: 100px;
-    margin-bottom: 30px;
   }
 
   .icon {
@@ -99,14 +98,18 @@
   }
 
   .addToFavorites {
-    font-size: 18px;
-    padding: 12px 25px;
+    font-size: 14px;
+    padding: 12px 15px;
   }
+}
+.main {
+  padding: 5px 0;
 }
 
 @media (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    max-height: 70vh;
   }
 
   .nav {
@@ -131,7 +134,8 @@
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 40px;
+    padding: 20px;
+    max-height: 85vh;
   }
 
   .nav {
@@ -139,11 +143,11 @@
   }
 
   .icon {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .addToFavorites {
-    font-size: 22px;
+    font-size: 18px;
     padding: 18px 35px;
   }
 
